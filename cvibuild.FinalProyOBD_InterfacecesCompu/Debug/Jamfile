@@ -1,0 +1,42 @@
+CCFLAGS = -g ;
+HDRS = 	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2015\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2015\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2015\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2015\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "FinalProyOBD_InterfacecesCompu.c" = "c:\\Proy_Interfaces_compu\\_LabwinCVI\\05_ProyOBDii\\ProyV3" ;
+Object "c:\\Proy_Interfaces_compu\\_LabwinCVI\\05_ProyOBDii\\ProyV3\\cvibuild.FinalProyOBD_InterfacecesCompu\\Debug\\FinalProyOBD_InterfacecesCompu.obj" : "c:\\Proy_Interfaces_compu\\_LabwinCVI\\05_ProyOBDii\\ProyV3\\FinalProyOBD_InterfacecesCompu.c" ;
+FILENUM on "c:\\Proy_Interfaces_compu\\_LabwinCVI\\05_ProyOBDii\\ProyV3\\cvibuild.FinalProyOBD_InterfacecesCompu\\Debug\\FinalProyOBD_InterfacecesCompu.obj" = 1 ;
+DEFPROTS on "c:\\Proy_Interfaces_compu\\_LabwinCVI\\05_ProyOBDii\\ProyV3\\cvibuild.FinalProyOBD_InterfacecesCompu\\Debug\\FinalProyOBD_InterfacecesCompu.obj" = "c:\\Proy_Interfaces_compu\\_LabwinCVI\\05_ProyOBDii\\ProyV3\\cvibuild.FinalProyOBD_InterfacecesCompu\\Debug\\FinalProyOBD_InterfacecesCompu.obj.cvidefprots" ;
+OUTFILE on "c:\\Proy_Interfaces_compu\\_LabwinCVI\\05_ProyOBDii\\ProyV3\\cvibuild.FinalProyOBD_InterfacecesCompu\\Debug\\FinalProyOBD_InterfacecesCompu.obj" = "c:\\Proy_Interfaces_compu\\_LabwinCVI\\05_ProyOBDii\\ProyV3\\cvibuild.FinalProyOBD_InterfacecesCompu\\Debug\\FinalProyOBD_InterfacecesCompu.obj.out" ;
+PrjObjects += "c:\\Proy_Interfaces_compu\\_LabwinCVI\\05_ProyOBDii\\ProyV3\\cvibuild.FinalProyOBD_InterfacecesCompu\\Debug\\FinalProyOBD_InterfacecesCompu.obj" ;
+Object "c:\\Proy_Interfaces_compu\\_LabwinCVI\\05_ProyOBDii\\ProyV3\\cvibuild.FinalProyOBD_InterfacecesCompu\\Debug\\resources.res" : "c:\\Proy_Interfaces_compu\\_LabwinCVI\\05_ProyOBDii\\ProyV3\\cvibuild.FinalProyOBD_InterfacecesCompu\\Debug\\resources.in.rc" ;
+MainFromObjects "c:\\Proy_Interfaces_compu\\_LabwinCVI\\05_ProyOBDii\\ProyV3\\cvibuild.FinalProyOBD_InterfacecesCompu\\Debug\\FinalProyOBD_InterfacecesCompu.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\Proy_Interfaces_compu\\_LabwinCVI\\05_ProyOBDii\\ProyV3\\cvibuild.FinalProyOBD_InterfacecesCompu\\Debug\\FinalProyOBD_InterfacecesCompu.exe" : "c:\\Proy_Interfaces_compu\\_LabwinCVI\\05_ProyOBDii\\ProyV3\\cvibuild.FinalProyOBD_InterfacecesCompu\\Debug\\link_options.txt" ;
+Depends "c:\\Proy_Interfaces_compu\\_LabwinCVI\\05_ProyOBDii\\ProyV3\\cvibuild.FinalProyOBD_InterfacecesCompu\\Debug\\FinalProyOBD_InterfacecesCompu.exe" : "c:\\Proy_Interfaces_compu\\_LabwinCVI\\05_ProyOBDii\\ProyV3\\cvibuild.FinalProyOBD_InterfacecesCompu\\Debug\\resources.res" ;
+Depends all : "c:\\Proy_Interfaces_compu\\_LabwinCVI\\05_ProyOBDii\\ProyV3\\cvibuild.FinalProyOBD_InterfacecesCompu\\Debug\\FinalProyOBD_InterfacecesCompu.exe" ;
